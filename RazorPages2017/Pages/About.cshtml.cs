@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Hosting;
 using RazorPages2017.Extras;
+using System.Reflection;
+using System.Runtime.Versioning;
 
 namespace RazorPages2017.Pages
 {
@@ -19,6 +21,7 @@ namespace RazorPages2017.Pages
         public string CurrentRunTimeVersion { get; set; }
         public string MyApplicationName { get; set; }
         public string SolutionName { get; set; }
+        public string TargetFramework { get; set; }
 
         public AboutModel(IHostingEnvironment env)
         {
@@ -33,6 +36,11 @@ namespace RazorPages2017.Pages
             OSDescription = System.Runtime.InteropServices.RuntimeInformation.OSDescription;
             ProcessArchitecture = System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture.ToString();
             version = "Version: " + @System.Environment.Version + " from: " + @System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory();
+
+
+            //var asembli = Assembly.GetExecutingAssembly();
+            var atrib = Assembly.GetExecutingAssembly().CustomAttributes.FirstOrDefault(a => a.AttributeType == typeof(TargetFrameworkAttribute));
+            TargetFramework = atrib?.ConstructorArguments[0].Value.ToString();
 
         }
 

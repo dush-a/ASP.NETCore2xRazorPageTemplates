@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.Versioning;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -21,6 +23,7 @@ namespace RazorPages2017.Pages
         public string CurrentRunTimeVersion { get; set; }
         public string MyApplicationName { get; set; }
         public string SolutionName { get; set; }
+        public string TargetFramework { get; set; }
 
         public IndexModel(ILogger<IndexModel> logger, IHostingEnvironment env)
         {
@@ -38,6 +41,10 @@ namespace RazorPages2017.Pages
             ProcessArchitecture = System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture.ToString();
             version = "Version: " + @System.Environment.Version + " from: " + @System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory();
             _logger.LogInformation("Completed Index.OnGet, {ThisEnvironment}!", ThisEnvironment);
+
+            var asembli = Assembly.GetExecutingAssembly();
+            var atrib = asembli.CustomAttributes.FirstOrDefault(a => a.AttributeType == typeof(TargetFrameworkAttribute));
+            TargetFramework = atrib?.ConstructorArguments[0].Value.ToString();
         }
     }
 }
