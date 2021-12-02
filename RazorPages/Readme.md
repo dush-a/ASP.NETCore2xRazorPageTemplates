@@ -1,1 +1,0 @@
-﻿This project contains some coding for image carousels.

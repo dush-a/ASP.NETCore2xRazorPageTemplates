@@ -1,9 +1,0 @@
-@import "scss/_functions.scss";
-@import "scss/_variables.scss";
-
-/* set the overriding variables */
-$grid-breakpoints: ( xxs: 0, xs: 360px, sm: 576px, md: 768px, lg: 992px, lgr: 1200px, xl: 1400px, xxl: 1680px, xxxl: 2000px );
-$container-max-widths: ( xxs: 0, xs: 340px, sm: 546px, md: 738px, lg: 962px, lgr: 1160px, xl: 1360px, xxl: 1600px, xxxl: 1900px );
-
-/* override the !default vars with the values we set above */
-@import "scss/bootstrap.scss";
