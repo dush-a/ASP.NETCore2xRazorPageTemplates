@@ -1,0 +1,30 @@
+﻿@page
+@model AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@Model.Message</h3>
+
+<environment include="Development,Staging">
+    <div class="panel panel-default text-center">
+        <div class="panel-heading">
+            <h1>Visual Studio Solution Name: <span class="text-success">@Html.DisplayFor(model => model.SolutionName)</span></h1>
+        </div>
+        <div class="panel-body">
+            <div class="alert alert-warning">
+                <h3 class="panel-title">Project Name : <span class="span-bold text-danger">@Html.DisplayFor(model => model.MyApplicationName)</span></h3>
+            </div>
+            <p class="panel-primary bg-danger"> ASPNETCORE_ENVIRONMENT : <span class="btn btn-danger">@Html.DisplayFor(model => model.ThisEnvironment)</span> </p>
+
+            <p class="bg-primary">Application Name : <span class="btn alert-primary">@Html.DisplayFor(model => model.MyApplicationName)</span> </p>
+            <p class="bg-success">TargetFramework : <span class="btn alert-primary">@Html.DisplayFor(model => model.TargetFramework)</span> </p>
+
+            <p class="bg-info">Current RunTime Version : <span class="btn alert-primary">@Html.DisplayFor(model => model.CurrentRunTimeVersion)</span> </p>
+        </div>
+        <div class="panel-footer text-muted">
+            <p><span class="btn alert-primary">@Html.DisplayFor(model => model.version)</span> </p>
+        </div>
+    </div>
+
+</environment>
