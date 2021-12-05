@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace RazorPages2017.Data
+namespace RazorPages.Core22.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace RazorPages2017.Pages
+namespace RazorPages.Core22.Pages
 {
     public class PrivacyModel : PageModel
     {

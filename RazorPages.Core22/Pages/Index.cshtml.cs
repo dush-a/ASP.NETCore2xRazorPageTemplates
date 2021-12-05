@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using RazorPages2017.Extras;
+using RazorPages.Core22.Extras;
 
-namespace RazorPages2017.Pages
+namespace RazorPages.Core22.Pages
 {
     public class IndexModel : PageModel
     {

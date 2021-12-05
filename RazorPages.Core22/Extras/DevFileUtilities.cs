@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace RazorPages2017.Extras
+namespace RazorPages.Core22.Extras
 {
     public static class DevFileUtilities
     {

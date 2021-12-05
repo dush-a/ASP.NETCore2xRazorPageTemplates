@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace RazorPages2017.Data.Migrations
+namespace RazorPages.Core22.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

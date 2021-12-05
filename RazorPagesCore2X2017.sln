@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1401
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPages2017", "RazorPages2017\RazorPages2017.csproj", "{03AE258F-911B-4E59-829C-418295A3266E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPages.Core22", "RazorPages.Core22\RazorPages.Core22.csproj", "{03AE258F-911B-4E59-829C-418295A3266E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPages.Core21", "RazorPages.Core21\RazorPages.Core21.csproj", "{E8F9AA7E-9E52-4B50-A865-F1E0E61BAAE0}"
 EndProject

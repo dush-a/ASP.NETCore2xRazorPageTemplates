@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Hosting;
-using RazorPages2017.Extras;
+using RazorPages.Core22.Extras;
 using System.Reflection;
 using System.Runtime.Versioning;
 
-namespace RazorPages2017.Pages
+namespace RazorPages.Core22.Pages
 {
     public class AboutModel : PageModel
     {
