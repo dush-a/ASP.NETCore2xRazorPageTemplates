@@ -4,9 +4,11 @@ This template uses ASP.NET Core Razor Pages Framework.
 
 Frameworks and versions used in this template
 
-ASP.NET Core 2.2
-UI Framework - bootstrap 4.3.1.
-Icons - font-awesome 5.10.1
+<ul>
+  <li>ASP.NET Core 2.2</li>
+  <li>UI Framework - bootstrap 4.3.1.</li>
+  <li>Icons - font-awesome 5.10.1</li>
+</ul>
 
 The template is created using ASP.NET Core Razor pages web template with individual user authentication
 
@@ -41,7 +43,6 @@ As in this part, equal height cards can easily add using Bootstrap <i>Cards</i> 
 And more features to come ..
 
 # How to use this template:
-
 
 Fork or create a branch or download the code to your computer and open using any version of Visual Studio 2017. I used Visual Studio 2017 Community Edition.
 
