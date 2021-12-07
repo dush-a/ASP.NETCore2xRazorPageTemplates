@@ -1,11 +1,10 @@
 # ASP.NET Core Starter Templates
 
-This is a starter web application project. The target framework is ASP.NET core 2.x
+In this solution there are 2 ASP.NETCore Razor Pages starter web application projects. The target framework is ASP.NET core 2.x
 
-The template uses ASP.NET Core Razor Pages Framework.
 Also, It uses the default bootstrap framework for UI.
 
-The template is created using ASP.NET Core Razor pages web template with individual user authentication
+These templates are created using Default Visual Studio ASP.NET Core Razor pages web template with individual user authentication and then modified with more commonly used web site features
 
 Additional Features included in this template:
 
