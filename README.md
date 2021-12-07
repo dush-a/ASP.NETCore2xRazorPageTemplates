@@ -1,4 +1,4 @@
-# ASP.NET Core Razor Pages Starter Templates
+# ASP.NET Core 2x Razor Pages Starter Templates
 
 In this solution there are two ASP.NET Core Razor Pages starter web application projects. The target framework is ASP.NET core 2.x
 
