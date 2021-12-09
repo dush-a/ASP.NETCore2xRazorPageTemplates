@@ -19,7 +19,16 @@
               crossorigin="anonymous"
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
     </environment>
-    <link rel="stylesheet" href="~/css/site.css" />
+   
+    <environment include="Development">
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/lib/animate.css/animate.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/css/site.min.css" />
+        <link rel="stylesheet" href="~/lib/animate.css/animate.min.css" />
+    </environment>
+
 </head>
 <body>
     <header class="sticky-top">
@@ -52,14 +61,14 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-        <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top" role="button"><i class="fas fa-arrow-alt-circle-up"></i></a>
+        <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top" role="button" title="goto top button"><i class="fas fa-arrow-alt-circle-up"></i></a>
 
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
             @*&copy; 2021 - RazorPages.Core22 - <a asp-area="" asp-page="/Privacy">Privacy</a>*@
-            <span class="copyright">&copy; 2018 - @DateTime.Now.Year - RazorPages.Core22.Template </span>
+            <span class="copyright text-wrap">&copy; 2018 - @DateTime.Now.Year - RazorPages.Core22.Template - <a asp-area="" asp-page="/Privacy">Privacy</a> </span>
         </div>
     </footer>
 
@@ -81,8 +90,8 @@
                 integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
         </script>
     </environment>
+    <script src="~/js/viewportSize.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/js/jquery.scrollUp.min.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

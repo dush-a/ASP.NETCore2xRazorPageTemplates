@@ -24,17 +24,8 @@ $(document).ready(function () {
                 $("nav .nav-company-name > a").removeClass("navbar-brand");
                 $("nav .nav-company-name > a").addClass("navbar-brand-shrink");
 
-
-                $("nav .nav-item > a").removeClass("scroll-link");
-                $("nav .nav-item > a").addClass("scroll-link-shrink");
-
-
-                //    $("nav button.navbar-toggler").addClass("navbar-toggler-shrink");
-
-                //$(".sticky-nav-contacts > div > a").removeClass("sticky-nav-company-phone");
-                //$(".sticky-nav-contacts > div > a").addClass("sticky-nav-company-phone-shrink");
-
-                //$(".sticky-nav-contacts > div").addClass("sticky-nav-contacts-shrink");
+                $("nav li > a").removeClass("scroll-link");
+                $("nav li > a").addClass("scroll-link-shrink");
 
             } else {
 
@@ -44,15 +35,8 @@ $(document).ready(function () {
                 $("nav .nav-company-name > a").addClass("navbar-brand");
                 $("nav .nav-company-name > a").removeClass("navbar-brand-shrink");
 
-                $("nav .nav-item > a").addClass("scroll-link");
-                $("nav .nav-item > a").removeClass("scroll-link-shrink");
-
-                //      $("nav .navbar-toggler").removeClass("navbar-toggler-shrink");
-
-                //$(".sticky-nav-contacts > div").removeClass("sticky-nav-contacts-shrink");
-
-                //$(".sticky-nav-contacts > div > a").addClass("sticky-nav-company-phone");
-                //$(".sticky-nav-contacts > div > a").removeClass("sticky-nav-company-phone-shrink");
+                $("nav li > a").addClass("scroll-link");
+                $("nav li > a").removeClass("scroll-link-shrink");
 
             }
         });

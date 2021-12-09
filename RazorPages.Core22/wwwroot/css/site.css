@@ -12,11 +12,7 @@ for details on configuring this project to bundle and minify static web assets. 
 html {
   font-size: 14px;
 }
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
+
 
 .border-top {
   border-top: 1px solid #e5e5e5;
@@ -95,4 +91,330 @@ body {
 
 .microdata-info {
     display: none;
+}
+
+/*#region Navbar */
+
+.navbar .container {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.nav-height {
+    min-height: 100px;
+    padding-top: 15px;
+}
+
+.navbar-brand {
+    font-size: 18px;
+}
+
+.nav-height-shrink {
+    min-height: 50px;
+    padding: -15px;
+    transition: all 0.5s ease;
+}
+
+nav .scroll-link-shrink, .navbar-toggler-shrink {
+    font-size: 14px !important;
+    color: #ecf0f1;
+    font-weight: 300;
+}
+
+.nav .navbar-toggler-shrink {
+    margin-right: 1.5rem;
+    padding: 0.2rem;
+}
+
+/*#endregion Navbar */
+
+.carousel .carousel-item {
+    height: 300px;
+}
+.carousel-item a{
+    color:#fce10b;
+}
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    /*top: 0;*/
+    left: 0;
+    min-height: 300px;
+}
+
+
+h1.display-4 {
+    font-size: 24px;
+}
+.jumbo h1.display-1 {
+    font-size: 40px;
+}
+h1 {
+    font-size: 26px;
+}
+h2 {
+    font-size: 22px;
+}
+h3 {
+    font-size: 20px;
+}
+h4{
+    font-size:17px;
+}
+p {
+    font-size: 1rem;
+}
+
+.carousel-caption p {
+    display: none;
+}
+
+.text-wrap {
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+#horizontal-features {
+    background: linear-gradient( rgb(96,96,96) ),url(../images/banner03-360x429.jpg) no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/banner03-360x429.jpg) no-repeat;
+    /*background: url(../images/banner03-360x429.jpg) no-repeat;*/
+   
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ddd;
+    padding: 80px 0;
+    /*opacity: 8;*/
+}
+
+    #horizontal-features:hover {
+        /*fallback - background for browsers that doesn't support rgba*/
+        background: linear-gradient( rgb(96,96,96) ), url(../images/banner03-360x429.jpg) no-repeat;
+        background: linear-gradient( rgba(0, 0, 1, 0.5), black ), url(../images/banner03-360x429.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #horizontal-features .card{
+        background:transparent;
+    }
+
+    .footer {
+        line-height: 1.2;
+    }
+@media (min-width: 576px) {
+    .navbar .container {
+        font-size: 18px;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .nav-height-shrink {
+        min-height: 40px;
+    }
+
+    nav .scroll-link-shrink, .navbar-toggler-shrink {
+        font-size: 16px !important;
+        font-weight: 300;
+    }
+
+    .carousel-caption p {
+        display: block;
+    }
+    
+    /*carousel*/
+    .carousel .carousel-item {
+        height: 400px;
+    }
+
+    .carousel-item img {
+        position: absolute;
+        object-fit: cover;
+
+        left: 0;
+        min-height: 400px;
+    }
+
+    h1.display-4 {
+        font-size: 40px;
+    }
+    
+    .jumbo h1.display-1 {
+        font-size: 45px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .card-deck .card {
+        min-width: 50.1%; /* 1 Column */
+        /*margin-bottom: 12px;*/
+    }
+
+    #horizontal-features {
+        /*background: url(../images/banner03-576x687.jpg) no-repeat;*/
+        background: linear-gradient( rgb(96,96,96) ),url(../images/banner03-576x687.jpg) no-repeat;
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/banner03-576x687.jpg) no-repeat;
+
+        background-size: cover;
+        background-attachment: fixed;
+        color: #ddd;
+        padding: 80px 0;
+    }
+
+        #horizontal-features:hover {
+            /*fallback - background for browsers that doesn't support rgba*/
+            background: linear-gradient( rgb(96,96,96) ), url(../images/banner03-576x687.jpg) no-repeat;
+            background: linear-gradient( rgba(0, 0, 1, 0.5), black ), url(../images/banner03-576x687.jpg) no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+}
+
+
+@media (min-width: 768px) {
+    .navbar .container {
+        font-size: 20px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .nav-height-shrink {
+        min-height: 42px;
+    }
+
+    nav .scroll-link-shrink, .navbar-toggler-shrink {
+        font-size: 18px !important;
+        font-weight: 300;
+    }
+
+    .carousel h1.display-4 {
+        font-size: 40px;
+    }
+    .jumbo h1.display-1 {
+        font-size: 60px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+    .card-deck .card {
+        min-width: 33.4%; /* 2 Columns */
+    }
+
+    #horizontal-features {
+        /*background: url(../images/banner03.jpg) no-repeat;*/
+        background: linear-gradient( rgb(96,96,96) ),url(../images/banner03.jpg) no-repeat;
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/banner03.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: #ddd;
+        padding: 80px 0;
+    }
+
+        #horizontal-features:hover {
+            /*fallback - background for browsers that doesn't support rgba*/
+            background: linear-gradient( rgb(96,96,96) ), url(../images/banner03.jpg) no-repeat;
+            background: linear-gradient( rgba(0, 0, 1, 0.5), black ), url(../images/banner03.jpg) no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+}
+@media (min-width: 992px) {
+
+    .jumbo h1.display-1 {
+        font-size: 70px;
+    }
+    h1.display-4 {
+        font-size: 3.5rem;
+    }
+
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .card-deck .card {
+        min-width: 25.1%; /* 3 Columns */
+    }
+}
+@media (min-width: 1200px) {
+
+    .jumbo h1.display-1 {
+        font-size: 90px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+}
+@media (min-width: 1980px) {
 }

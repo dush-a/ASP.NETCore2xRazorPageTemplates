@@ -97,8 +97,6 @@ nav .scroll-link-shrink, .navbar-toggler-shrink {
 
 /*#endregion Navbar */
 
-
-
 .display-1 {
     font-size: 30px;
     font-weight: 300;
@@ -111,11 +109,6 @@ nav .scroll-link-shrink, .navbar-toggler-shrink {
     overflow-wrap: break-word;
     hyphens: auto;
 }
-/*.feature-item {
-
-    background: #fef1ad;
-    color: #000;
-}*/
 
 /* display this row with flex and use wrap (= respect columns' widths) */
 @media (min-width: 768px) {
