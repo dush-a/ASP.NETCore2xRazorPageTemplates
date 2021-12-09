@@ -2,11 +2,13 @@
 
 This template uses ASP.NET Core Razor Pages Framework.
 
-Frameworks and versions used in this template
+Frameworks and versions used in this template:
 
-ASP.NET Core 2.1
-UI Framework - bootstrap 3.4.1.
-Icons - font-awesome 5.10.1
+<ul>
+  <li>ASP.NET Core 2.1</li>
+  <li>UI Framework - bootstrap 3.4.1.</li>
+  <li>Icons - font-awesome 5.10.1</li>
+</ul>
 
 The template is created using ASP.NET Core Razor pages web template with individual user authentication
 
