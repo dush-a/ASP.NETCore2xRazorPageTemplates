@@ -1,10 +1,18 @@
 ﻿@page
 @model RazorPages.Core22.Pages.AboutModel
 @{
-    ViewData["Title"] = "About";
+    ViewData["Title"] = "About Us";
 }
 
-
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="top-header-text network-name text-center">
+                <h1>@ViewData["Title"]</h1>
+            </div>
+        </div>
+    </div>
+</div>
 <environment include="Development,Staging">
     <div class="card text-center">
         <div class="card-header">
@@ -40,7 +48,7 @@
 
         </div>
         <div class="card-footer text-muted">
-            <p><span class="btn alert-primary">@Html.DisplayFor(model => model.version)</span> </p>
+            <p><span class="btn alert-primary text-wrap">@Html.DisplayFor(model => model.version)</span> </p>
         </div>
     </div>
 
