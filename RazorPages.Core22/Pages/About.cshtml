@@ -30,7 +30,7 @@
             </environment>
             <p>Application Name : <span class="btn alert-primary">@Html.DisplayFor(model => model.MyApplicationName)</span> </p>
             <p>TargetFramework : <span class="btn alert-primary">@Html.DisplayFor(model => model.TargetFramework)</span> </p>
-            <p>Current RunTime Version : <span class="btn alert-primary">@Html.DisplayFor(model => model.CurrentRunTimeVersion)</span> </p>
+
             <p>OS Description : <span class="btn alert-primary">@Html.DisplayFor(model => model.OSDescription)</span> </p>
             <p>Process Architecture: <span class="btn alert-primary">@Html.DisplayFor(model => model.ProcessArchitecture)</span></p>
             <p>System Date : <span class="btn alert-primary">@DateTime.Now.Date</span> </p>
@@ -43,14 +43,26 @@
             <p>System Minute : <span class="btn alert-primary">@DateTime.Now.Minute</span> </p>
             <p>System Second : <span class="btn alert-primary">@DateTime.Now.Second</span> </p>
 
-            Version:  @System.Environment.Version  from: @System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory()
-
+            <p>.NET Core Version : <span class="btn alert-primary">@Html.DisplayFor(model => model.DotNetCoreVersion)</span> </p>
+            <p class="text-wrap">
+                .NET Core  @Html.DisplayFor(model => model.DotNetCoreVersion)  installed in:  @System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory()
+            </p>
+            <p><span class="btn alert-primary text-wrap">@Html.DisplayFor(model => model.VersionText)</span> </p>
 
         </div>
         <div class="card-footer text-muted">
-            <p><span class="btn alert-primary text-wrap">@Html.DisplayFor(model => model.version)</span> </p>
+            
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3>.NET Framework Info</h3>
+                </div>
+                <div class="card-body">
+                    <p>.NET Framework Current Runtime : <span class="btn alert-primary">@System.Environment.Version </span> </p>
+                    <p>.NET Framework Version : <span class="btn alert-primary">@Html.DisplayFor(model => model.NetFrameworkVer) </span> </p>
+                </div>
+            </div>
         </div>
-    </div>
+        </div>
 
     <div class="container mt-5">
 

@@ -228,11 +228,10 @@
             <p class="bg-primary">Application Name : <span class="btn alert-primary  text-wrap">@Html.DisplayFor(model => model.MyApplicationName)</span> </p>
             <p class="bg-success">TargetFramework : <span class="btn alert-primary  text-wrap">@Html.DisplayFor(model => model.TargetFramework)</span> </p>
 
-            <p class="bg-info">Current RunTime Version : <span class="btn alert-primary  text-wrap">@Html.DisplayFor(model => model.CurrentRunTimeVersion)</span> </p>
-            
+            <p class="bg-info">.NET Core Version : <span class="btn alert-primary">@Html.DisplayFor(model => model.DotNetCoreVersion)</span> </p>
         </div>
-        <div class="panel-footer text-wrap text-muted">
-            <p>@Html.DisplayFor(model => model.version) </p>
+        <div class="panel-footer text-wrap  text-muted">
+            <p><span class="btn alert-primary">@Html.DisplayFor(model => model.VersionText)</span> </p>
         </div>
     </div>
 

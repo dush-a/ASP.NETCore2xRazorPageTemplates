@@ -29,5 +29,22 @@ namespace RazorPages.Core21.Extras
 
             throw new FileNotFoundException("Cannot find solution file path");
         }
+
+
+        /// <summary>
+        /// Get .NET Core Version in versions older than 3.0.0
+        /// </summary>
+        /// <remarks>// reference -https://stackoverflow.com/a/49309382/1068538</remarks>
+        /// <returns></returns>
+        public static string GetNetCoreVersion()
+        {
+            var assembly = typeof(System.Runtime.GCSettings).GetTypeInfo().Assembly;
+            var assemblyPath = assembly.CodeBase.Split(new[] { '/', '\\' }, StringSplitOptions.RemoveEmptyEntries);
+            int netCoreAppIndex = Array.IndexOf(assemblyPath, "Microsoft.NETCore.App");
+            if (netCoreAppIndex > 0 && netCoreAppIndex < assemblyPath.Length - 2)
+                return assemblyPath[netCoreAppIndex + 1];
+            return null;
+        }
+
     }
 }

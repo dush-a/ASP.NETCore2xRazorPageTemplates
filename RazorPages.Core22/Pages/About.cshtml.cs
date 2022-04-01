@@ -16,12 +16,17 @@ namespace RazorPages.Core22.Pages
         private readonly IHostingEnvironment _env;
         public string OSDescription;
         public string ProcessArchitecture;
-        public string version;
+        public string VersionText;
+        public string DotNetCoreVersion;
+        public string NetFrameworkVer;
+
         public string ThisEnvironment { get; set; }
-        public string CurrentRunTimeVersion { get; set; }
+      //  public string CurrentRunTimeVersion { get; set; }
         public string MyApplicationName { get; set; }
         public string SolutionName { get; set; }
         public string TargetFramework { get; set; }
+
+
 
         public AboutModel(IHostingEnvironment env)
         {
@@ -32,15 +37,17 @@ namespace RazorPages.Core22.Pages
             SolutionName = DevFileUtilities.GetSolutionFileName();
             ThisEnvironment = _env.EnvironmentName;
             MyApplicationName = _env.ApplicationName;
-            CurrentRunTimeVersion = System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription;
-            OSDescription = System.Runtime.InteropServices.RuntimeInformation.OSDescription;
-            ProcessArchitecture = System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture.ToString();
-            version = "Version: " + @System.Environment.Version + " from: " + @System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory();
-
 
             var atrib = Assembly.GetExecutingAssembly().CustomAttributes.FirstOrDefault(a => a.AttributeType == typeof(TargetFrameworkAttribute));
             TargetFramework = atrib?.ConstructorArguments[0].Value.ToString();
+                        
+            OSDescription = System.Runtime.InteropServices.RuntimeInformation.OSDescription;
+            ProcessArchitecture = System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture.ToString();
 
+            VersionText = "Version: " + DevFileUtilities.GetNetCoreVersion() + " installed in: " + @System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory();
+                      
+            DotNetCoreVersion = DevFileUtilities.GetNetCoreVersion();
+            NetFrameworkVer = SystemHelpers.GetInstalledDotNetFrameworkVersion();
         }
 
     }

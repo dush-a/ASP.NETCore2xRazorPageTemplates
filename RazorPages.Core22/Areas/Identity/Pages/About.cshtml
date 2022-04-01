@@ -1,0 +1,64 @@
+﻿@page
+@model RazorPages.Core22.Areas.Identity.Pages.AboutModel
+@{
+    ViewData["Title"] = "About Us";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="top-header-text network-name text-center">
+                <h1>@ViewData["Title"]</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<environment include="Development,Staging">
+    <div class="card text-center">
+        <div class="card-header">
+            <h1>Visual Studio Solution Name: <span class="text-success">ASPNETCoreTutorials2017 </span></h1>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title">Project Name : <span class="span-bold text-danger">@Html.DisplayFor(model => model.MyApplicationName)</span></h3>
+            <p class="card-text"> ASPNETCORE_ENVIRONMENT : <span class="btn btn-danger">@Html.DisplayFor(model => model.ThisEnvironment)</span> </p>
+
+            <environment include="Staging">
+                <strong>HostingEnvironment.EnvironmentName is Staging</strong>
+            </environment>
+            <environment include="Development">
+                <strong>HostingEnvironment.EnvironmentName is Development</strong>
+            </environment>
+            <p>Application Name : <span class="btn alert-primary">@Html.DisplayFor(model => model.MyApplicationName)</span> </p>
+            <p>TargetFramework : <span class="btn alert-primary">@Html.DisplayFor(model => model.TargetFramework)</span> </p>
+            
+            <p>OS Description : <span class="btn alert-primary">@Html.DisplayFor(model => model.OSDescription)</span> </p>
+            <p>Process Architecture: <span class="btn alert-primary">@Html.DisplayFor(model => model.ProcessArchitecture)</span></p>
+            
+            <p>System Hour : <span class="btn alert-primary">@DateTime.Now.Hour</span> </p>
+            <p>System Minute : <span class="btn alert-primary">@DateTime.Now.Minute</span> </p>
+            <p>System Second : <span class="btn alert-primary">@DateTime.Now.Second</span> </p>
+                        
+
+        </div>
+       
+    </div>
+
+    <div class="container mt-5">
+
+
+
+        <div class="card mt-3">
+            <div class="card-header">
+                UI Framework
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Bootstrap 4.3.1</h5>
+                <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" class="card-text" title="Bootstrap 4.3.1">https://getbootstrap.com/docs/4.3/getting-started/introduction/</a>
+                <a href="https://getbootstrap.com/docs/4.3/getting-started/download/" class="btn btn-primary" aria-label="Bootstrap 4.3.1">Go to Bootstrap Download</a>
+            </div>
+        </div>
+
+    </div>
+</environment>
+
