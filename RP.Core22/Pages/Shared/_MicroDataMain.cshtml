@@ -1,0 +1,31 @@
+﻿@using RP.Core22.AppData.Models
+@using RP.Core22.AppData.Services
+@inject Microsoft.Extensions.Options.IOptions<BusinessInfo> businessOptions
+
+@{
+    var opt = businessOptions.Value;
+    string e_mail = "mailto:" + (opt.Email).Trim();
+    string intnlPhone;
+    string localPhone = BusinessInfoService.getFormattedPhone(opt.Telephone, out intnlPhone);
+    //If Fax is required you can add it to the BusinessInfo model
+    // string intnlFax;
+    //string localFax = BusinessInfoService.getFormattedPhone(opt.FaxNumber, out intnlFax);
+
+}
+
+<div itemscope itemtype="http://schema.org/LocalBusiness" class="microdata-info">
+    <div itemprop="name">@opt.BusinessName</div>
+    <div>Email: <span itemprop="email"><a href=@e_mail> @opt.Email</a></span></div>
+    <div>Phone: <span itemprop="telephone"><a href="tel:" @opt.Telephone>@localPhone</a></span> -  International : <span itemprop="interNationalTelephone"><a href="tel:" @intnlPhone>@intnlPhone</a></span></div>
+    @*<div>Fax: <span itemprop="faxNumber">@localFax</span> -  International: <span itemprop="internationalfaxNumber">@intnlFax</span></div>*@
+    <div>Url: <span itemprop="url"><a href=@opt.DefaultUrl>@opt.DefaultUrl</a></span></div>
+
+    <div itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="address">
+        <div itemprop="streetAddress">@opt.StreetAddress</div>
+        <div itemprop="streetAddress">@opt.StreetAddress2</div>
+        <div>
+            <span itemprop="addressLocality">@opt.Suburb</span> <span itemprop="addressRegion">@opt.State</span> <span itemprop="postalCode">@opt.PostCode</span>
+            <span itemprop="addressCountry">@opt.Country</span>
+        </div>
+    </div>
+</div>

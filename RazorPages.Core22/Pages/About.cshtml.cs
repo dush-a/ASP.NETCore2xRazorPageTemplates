@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Hosting;
 using RazorPages.Core22.Extras;
@@ -19,14 +15,10 @@ namespace RazorPages.Core22.Pages
         public string VersionText;
         public string DotNetCoreVersion;
         public string NetFrameworkVer;
-
         public string ThisEnvironment { get; set; }
-      //  public string CurrentRunTimeVersion { get; set; }
         public string MyApplicationName { get; set; }
         public string SolutionName { get; set; }
         public string TargetFramework { get; set; }
-
-
 
         public AboutModel(IHostingEnvironment env)
         {
