@@ -200,8 +200,9 @@ p {
 
 /*#region custom footer */
 .footer-wrap {
-    padding: 3em 0 2em 0;
+    padding: 6em 0 2em 0;
     background-color: #023d9a;
+    
 }
 
 .footer .contact-info, .footer .footer-other-links {
