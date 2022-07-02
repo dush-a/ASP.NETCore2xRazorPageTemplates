@@ -21,22 +21,22 @@ $(document).ready(function () {
                 $("nav").addClass("nav-height-shrink");
 
 
-                $("nav .nav-company-name > a").removeClass("navbar-brand");
-                $("nav .nav-company-name > a").addClass("navbar-brand-shrink");
+                $("nav .container > a").removeClass("navbar-brand");
+                $("nav .container > a").addClass("navbar-brand-shrink");
 
-                $("nav li > a").removeClass("scroll-link");
-                $("nav li > a").addClass("scroll-link-shrink");
+                $("nav li > a").removeClass("nav-link");
+                $("nav li > a").addClass("nav-link-shrink");
 
             } else {
 
                 $("nav").addClass("nav-height");
                 $("nav").removeClass("nav-height-shrink");
 
-                $("nav .nav-company-name > a").addClass("navbar-brand");
-                $("nav .nav-company-name > a").removeClass("navbar-brand-shrink");
+                $("nav .container > a").addClass("navbar-brand");
+                $("nav .container > a").removeClass("navbar-brand-shrink");
 
-                $("nav li > a").addClass("scroll-link");
-                $("nav li > a").removeClass("scroll-link-shrink");
+                $("nav li > a").addClass("nav-link");
+                $("nav li > a").removeClass("nav-link-shrink");
 
             }
         });
@@ -85,4 +85,31 @@ $(document).ready(function () {
         });
     }
 
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+
+
+    //const animateCSS = (element, animation, prefix = 'animate__') =>
+    //    // We create a Promise and return it
+    //    new Promise((resolve, reject) => {
+    //        const animationName = `${prefix}${animation}`;
+    //        const node = document.querySelector(element);
+
+    //        node.classList.add(`${prefix}animated`, animationName);
+
+    //        // When the animation ends, we clean the classes and resolve the Promise
+    //        function handleAnimationEnd(event) {
+    //            event.stopPropagation();
+    //            node.classList.remove(`${prefix}animated`, animationName);
+    //            resolve('Animation ended');
+    //        }
+
+    //        node.addEventListener('animationend', handleAnimationEnd, { once: true });
+    //    });
+
+    //animateCSS('.anim-test1', 'fadeInRight');
+
 }());
+
+

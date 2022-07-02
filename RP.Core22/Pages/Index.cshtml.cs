@@ -4,6 +4,8 @@ using System.Runtime.Versioning;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using RP.Core22.AppData.Models;
 using RP.Core22.Pages.HelperUtilities;
 
 namespace RP.Core22.Pages
@@ -12,6 +14,8 @@ namespace RP.Core22.Pages
     {
         private readonly ILogger<IndexModel> _logger;
         private readonly IHostingEnvironment _env;
+        private readonly BusinessInfo _options;
+
         public string OSDescription;
         public string ProcessArchitecture;
         public string version;
@@ -22,10 +26,13 @@ namespace RP.Core22.Pages
         public string TargetFramework { get; set; }
         public string DotNetCoreVersion;
 
-        public IndexModel(ILogger<IndexModel> logger, IHostingEnvironment env)
+        public string BusinessName { get; set; }
+
+        public IndexModel(ILogger<IndexModel> logger, IHostingEnvironment env, IOptions<BusinessInfo> busOptions)
         {
             _logger = logger;
             _env = env;
+            _options = busOptions.Value;
             DotNetCoreVersion = SystemHelpers.getCoreVersion();
         }
 
@@ -44,7 +51,7 @@ namespace RP.Core22.Pages
             var atrib = asembli.CustomAttributes.FirstOrDefault(a => a.AttributeType == typeof(TargetFrameworkAttribute));
             TargetFramework = atrib?.ConstructorArguments[0].Value.ToString();
 
-            //DotNetCoreVersion = DevFileUtilities.GetNetCoreVersion();
+            BusinessName = _options.BusinessName;
         }
     }
 }
