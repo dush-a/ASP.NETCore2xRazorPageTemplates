@@ -3,6 +3,18 @@ for details on configuring this project to bundle and minify static web assets. 
 
 /*#region custom code ################################################## */
 
+:root {
+    --light-bg-color: #fafafa;
+    --card-box-shadow: 1px 5px 7.5px #C4C4C433;
+    --card-hover-box-shadow: 1px 20px 30px #C4C4C433;
+    --card-curve: 6px;
+    /*--primary-color: #4c77e0;
+    --secondary-color: #ff5724;
+    --text-color: #6c757d;
+    --title-color: #2d2d43;
+    --white-color: #ffffff;*/
+}
+
 /*#region Site Defaults */
 
 html {
@@ -32,11 +44,12 @@ body {
     width: 100%;
 }
 
-
-
 a {
     color: #0366d6;
 }
+    a:hover {
+        text-decoration: none;
+    }
 
 .btn-primary {
     color: #fff;
@@ -291,20 +304,20 @@ li.nav-item {
 
 /*#region Services */
 
-/*#region service1 */
+/*#region business-services1-grid1 */
 
-#service1 {
+#sctn-business-services1 {
     padding-top: 1em;
 }
 
-    #service1 .row {
+    #sctn-business-services1 .row {
         padding-top: 1em;
         padding-bottom: 5em;
         margin-right: -8px;
         margin-left: -8px;
     }
 
-.service-grid1 {
+.business-services1-grid1 {
     padding: 0.1em 0 0.1em 0;
 }
 
@@ -314,33 +327,70 @@ li.nav-item {
     padding-top: 5em;
     animation: fadeInTopRight 2s ease;
 }
-/*#endregion service1*/
+/*#endregion business-services1-grid1*/
 
 /*#region service2 */
 /*#endregion service2*/
-/*#endregion Services*/
 
-/*#region service-features */
+/*#region service-feature1 */
 
-.service-features .row {
-    margin-right: 0;
-    margin-left: 0;
+.service-feature1 {
+    background-color: var(--light-bg-color);
 }
 
-    .service-features .row .card {
+    .service-feature1 .col-md-6, .service-feature1 .col {
+        margin-bottom: 2em;
+    }
+
+.service-feature1 .card {
+    border: 0;
+}
+
+.feature1-header{
+    padding:2em;
+}
+
+.service-feature1 .card.border-feature1:hover {
+    background-image: linear-gradient(to left, rgba(247, 228, 205, 0.95), rgba(250, 247, 134, 0.95), rgba(9, 196, 222, 0.90));
+}
+
+.service-feature1 .des-box {
+    transition: 0.3s ease-in;
+    border: 1px solid var(--light-bg-color);
+    border-radius: var(--card-curve);
+    padding: 2rem 1rem 2rem 1rem;
+    background: #fff;
+    box-shadow: var(--card-box-shadow);
+    display: flex;
+    text-align: center;
+
+}
+
+    .service-feature1 .des-box:hover {
+        background-image: linear-gradient(to left, rgba(247, 228, 205, 0.95), rgba(250, 247, 134, 0.95));
+    }
+    /*#endregion service-feature1*/
+
+    /*#endregion Services*/
+    
+    /*#region business-scope */
+    .business-scope .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .business-scope .row .card {
         border: 0;
     }
 
-.service-features img {
+.business-scope img {
     padding: 5em;
 }
 
-/*#endregion service-features*/
+/*#endregion business-scope*/
 
-
-
-/*#region Order */
-.order {
+    /*#region Order */
+    .order {
     background: #fefefd;
     padding-top: 60px;
 }
@@ -581,17 +631,17 @@ ul.supp li {
 
     /*#region Services */
 
-    /*#region service1 */
+    /*#region business-services1-grid1 */
 
-    #service1 {
+    #sctn-business-services1 {
         padding: 1em;
     }
 
-        #service1 .row {
+        #sctn-business-services1 .row {
             padding-bottom: 5em;
         }
 
-    /*.service-grid1 {
+    /*.business-services1-grid1 {
         padding: 5em 0 5em 0;
     }*/
 
@@ -600,15 +650,13 @@ ul.supp li {
         animation: fadeInTopRight 2s ease;
     }
 
-    /*#endregion service1*/
+    /*#endregion business-services1-grid1*/
 
     /*#region service2 */
 
 
 
     /*#endregion service2*/
-
-    /*#endregion Services*/
 
     /*#region service-packages */
 
@@ -619,15 +667,17 @@ ul.supp li {
 
     /*#endregion service-packages*/
 
-    /*#region service-features */
+    /*#endregion Services*/
 
-    .service-features .card {
+    /*#region business-scope */
+
+    .business-scope .card {
         min-width: 32%;
         margin-bottom: 1em;
     }
 
 
-    /*#endregion service-features*/
+    /*#endregion business-scope*/
 
     /*#region custom footer */
 
@@ -720,22 +770,6 @@ ul.supp li {
 
     /*#endregion Feature-set1 */
 
-    /*#region Services */
-
-    /*#region service1 */
-
-
-
-    /*#endregion service1*/
-
-    /*#region service2 */
-
-
-
-    /*#endregion service2*/
-
-    /*#endregion Services*/
-
     /*#region service-packages */
 
     /* .service-packages .card-deck .card {
@@ -745,13 +779,31 @@ ul.supp li {
 
     /*#endregion service-packages*/
 
-    /*#region service-features */
+    /*#region Services */
+
+    /*#region business-services1-grid1 */
+
+
+
+    /*#endregion business-services1-grid1*/
+
+    /*#region service2 */
+
+
+
+    /*#endregion service2*/
+
+    /*#endregion Services*/
+
+
+
+    /*#region business-scope */
     
-    .service-features img {
+    .business-scope img {
         padding: 1em;
     }
     
-    /*#endregion service-features*/
+    /*#endregion business-scope*/
     /*#region custom footer */
     .footer-wrapper {
         padding: 3em 1.5em 2em 1.5em;
@@ -840,21 +892,13 @@ ul.supp li {
 
     /*#endregion Feature-set1 */
 
+
     /*#region Services */
 
-    /*#region service-features */
-
-    .service-features img {
-        padding: 0.1em;
-    }
-
-    /*#endregion service-features*/
-
-    /*#region service1 */
+    /*#region business-services1-grid1 */
 
 
-
-    /*#endregion service1*/
+    /*#endregion business-services1-grid1*/
 
     /*#region service2 */
 
@@ -863,6 +907,14 @@ ul.supp li {
     /*#endregion service2*/
 
     /*#endregion Services*/
+
+    /*#region business-scope */
+
+    .business-scope img {
+        padding: 0.1em;
+    }
+
+    /*#endregion business-scope*/
 
     /*#region custom footer */
 
@@ -934,19 +986,17 @@ ul.supp li {
 
     /*#region Services */
 
-    /*#region service1 */
+    /*#region business-services1-grid1 */
 
 
 
-    /*#endregion service1*/
+    /*#endregion business-services1-grid1*/
 
     /*#region service2 */
 
 
 
     /*#endregion service2*/
-
-    /*#endregion Services*/
 
     /*#region service-packages */
 
@@ -956,7 +1006,7 @@ ul.supp li {
 
     /*#endregion service-packages*/
 
-
+    /*#endregion Services*/
 
     /*#region custom footer */
 
@@ -1025,11 +1075,11 @@ ul.supp li {
 
     /*#region Services */
 
-    /*#region service1 */
+    /*#region business-services1-grid1 */
 
 
 
-    /*#endregion service1*/
+    /*#endregion business-services1-grid1*/
 
     /*#region service2 */
 
