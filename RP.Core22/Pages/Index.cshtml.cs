@@ -44,13 +44,13 @@ namespace RP.Core22.Pages
             CurrentRunTimeVersion = System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription;
             OSDescription = System.Runtime.InteropServices.RuntimeInformation.OSDescription;
             ProcessArchitecture = System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture.ToString();
-            version = "Version: " + @System.Environment.Version + " from: " + @System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory();
+            version = "Version: " + @System.Environment.Version + " installed in: " + @System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory();
             _logger.LogInformation("Completed Index.OnGet, {ThisEnvironment}!", ThisEnvironment);
 
             var asembli = Assembly.GetExecutingAssembly();
             var atrib = asembli.CustomAttributes.FirstOrDefault(a => a.AttributeType == typeof(TargetFrameworkAttribute));
             TargetFramework = atrib?.ConstructorArguments[0].Value.ToString();
-
+            DotNetCoreVersion = SystemHelpers.getCoreVersion(TargetFramework);
             BusinessName = _options.BusinessName;
         }
     }

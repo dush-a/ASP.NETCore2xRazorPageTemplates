@@ -3,18 +3,6 @@ for details on configuring this project to bundle and minify static web assets. 
 
 /*#region custom code ################################################## */
 
-:root {
-    --light-bg-color: #fafafa;
-    --card-box-shadow: 1px 5px 7.5px #C4C4C433;
-    --card-hover-box-shadow: 1px 20px 30px #C4C4C433;
-    --card-curve: 6px;
-    /*--primary-color: #4c77e0;
-    --secondary-color: #ff5724;
-    --text-color: #6c757d;
-    --title-color: #2d2d43;
-    --white-color: #ffffff;*/
-}
-
 /*#region Site Defaults */
 
 html {
@@ -47,6 +35,7 @@ body {
 a {
     color: #0366d6;
 }
+
     a:hover {
         text-decoration: none;
     }
@@ -114,28 +103,7 @@ p {
 }
 
 /*#endregion Site Defaults*/
-/*.introduction h1 {
-    font-weight: 400;
-    font-size: 1.1em;
-    text-transform: capitalize;
-}
 
-.introduction h2 {
-    font-weight: 400;
-    font-size: 1.1em;
-}
-
-    .introduction h3 span, .introduction h2 span, .introduction h3 span {
-        font-weight: 600;
-        color: #047b1b;
-    }
-
-
-.introduction .span-bold {
-    font-weight: 500;
-    font-weight: bolder;
-    color: red;
-}*/
 /*#region Navbar */
 .navbar .container {
     font-size: 18px;
@@ -335,49 +303,48 @@ li.nav-item {
 /*#region service-feature1 */
 
 .service-feature1 {
-    background-color: var(--light-bg-color);
+    background-color: #fafafa;
 }
 
-    .service-feature1 .col-md-6, .service-feature1 .col {
-        margin-bottom: 2em;
-    }
-
-.service-feature1 .card {
-    border: 0;
+.service-feature1 .col-adjust {
+    margin-bottom: 2em;
 }
 
-.feature1-header{
-    padding:2em;
+.feature1-header {
+    padding: 2em;
 }
 
-.service-feature1 .card.border-feature1:hover {
-    background-image: linear-gradient(to left, rgba(247, 228, 205, 0.95), rgba(250, 247, 134, 0.95), rgba(9, 196, 222, 0.90));
+.service-feature1 .des-box a {
+    color: black;
+}
+
+.service-feature1 .feature-img {
+    color: #e13837;
 }
 
 .service-feature1 .des-box {
     transition: 0.3s ease-in;
-    border: 1px solid var(--light-bg-color);
-    border-radius: var(--card-curve);
+    border: 1px solid #fafafa; 
+    border-radius: 6px;
     padding: 2rem 1rem 2rem 1rem;
     background: #fff;
-    box-shadow: var(--card-box-shadow);
+    box-shadow: 1px 5px 7.5px #C4C4C433; 
     display: flex;
     text-align: center;
-
 }
 
     .service-feature1 .des-box:hover {
         background-image: linear-gradient(to left, rgba(247, 228, 205, 0.95), rgba(250, 247, 134, 0.95));
     }
-    /*#endregion service-feature1*/
+/*#endregion service-feature1*/
 
-    /*#endregion Services*/
-    
-    /*#region business-scope */
-    .business-scope .row {
-        margin-right: 0;
-        margin-left: 0;
-    }
+/*#endregion Services*/
+
+/*#region business-scope */
+.business-scope .row {
+    margin-right: 0;
+    margin-left: 0;
+}
 
     .business-scope .row .card {
         border: 0;
@@ -388,101 +355,6 @@ li.nav-item {
 }
 
 /*#endregion business-scope*/
-
-    /*#region Order */
-    .order {
-    background: #fefefd;
-    padding-top: 60px;
-}
-
-    .order .titlepage p {
-        color: #4c4b4b;
-        padding-top: 10px;
-    }
-
-.order-box_main {
-    margin-bottom: 30px;
-}
-
-.order-box {
-    border: #1ee1d6 solid 3px;
-    background: #fff;
-    margin-bottom: 40px;
-    transition: ease-in all 0.5s;
-    padding: 40px 10px;
-    cursor: pointer;
-}
-
-    .order-box h3 {
-        color: #2e3192;
-        font-size: 20px;
-        line-height: 20px;
-        font-weight: 500;
-        text-transform: uppercase;
-        padding-bottom: 15px;
-        transition: ease-in all 0.5s;
-    }
-
-    .order-box p {
-        padding-top: 9px;
-        color: #252626;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 15px;
-    }
-
-        .order-box p span {
-            font-size: 44px;
-            line-height: 44px;
-            font-weight: bold;
-            padding: 0 15px;
-        }
-
-    .order-box a {
-        border: #7381b1 solid 1px;
-        padding: 6px 20px;
-        margin: 0 auto;
-        border-radius: 30px;
-        color: #464647;
-        transition: ease-in all 0.5s;
-    }
-
-        .order-box a:hover {
-            background-color: #2e3192;
-            color: #fff;
-            transition: ease-in all 0.5s;
-        }
-
-ul.supp li {
-    font-size: 17px;
-    color: #464647;
-    line-height: 23px;
-    padding-top: 21px;
-}
-
-.order-box_main .read_more {
-    margin: 0 auto;
-    display: block;
-}
-
-.ho_co:hover .order-box h3 {
-    color: #43eee4;
-    transition: ease-in all 0.5s;
-}
-
-.ho_co:hover .order-box {
-    border: #2e3192 solid 3px;
-    transition: ease-in all 0.5s;
-}
-
-.ho_co:hover .read_more {
-    background-color: #2e3192;
-    transition: ease-in all 0.5s;
-}
-
-
-/*#endregion Order*/
 
 /*#region misc */
 
@@ -798,11 +670,11 @@ ul.supp li {
 
 
     /*#region business-scope */
-    
+
     .business-scope img {
         padding: 1em;
     }
-    
+
     /*#endregion business-scope*/
     /*#region custom footer */
     .footer-wrapper {

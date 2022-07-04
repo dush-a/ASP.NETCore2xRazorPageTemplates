@@ -42,7 +42,9 @@ namespace RP.Core22.Pages
 
             VersionText = "Version: " + DevFileUtilities.GetNetCoreVersion() + " installed in: " + @System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory();
 
-            DotNetCoreVersion = DevFileUtilities.GetNetCoreVersion();
+           // DotNetCoreVersion = DevFileUtilities.GetNetCoreVersion();
+            DotNetCoreVersion = SystemHelpers.getCoreVersion(TargetFramework);
+
             NetFrameworkVer = SystemHelpers.GetInstalledDotNetFrameworkVersion();
         }
 

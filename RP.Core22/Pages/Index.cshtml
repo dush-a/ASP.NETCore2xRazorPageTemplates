@@ -101,25 +101,14 @@
 <div class="text-center">
 
     <h2>Base Project Template For ASP.NET Core @Model.DotNetCoreVersion Razor Pages Web Application.  </h2>
-    <h3>This template has no user Authentication</h3>
-    <hr />
+    <h3>( This template has no user Authentication )</h3>
+    
     <h4>The template extends the existing Visual Studio  ASP.NET Core Razor pages web template project with most helpful features to build a professional web site.</h4>
-    @*<div>
-            <p class="text-center">1. The following .png image is a responsive image and it is done by adding the following bootstrap css classes to the img tag:</p>
-            <code>class="img-fluid mx-auto"</code>
-            <p class="text-center">And centered the image by adding following style to the css class of the parent <code>&lt;div&gt;</code>:</p>
-            <code>text-align:center;</code>
-        </div>
-        <div class="motion-picture1">
-            <img src="~/images/design1.png" alt="web-info" class="img-fluid mx-auto" />
-        </div>
-
-        <hr />*@
 
 </div>
+<hr />
 
-
-<div class="text-center">
+<div class="section-divider text-center">
     <div class="motion-picture2">
         <div>
             <p class="text-center"> The following .svg image is a responsive image. And it is done by adding the following style:</p>
@@ -139,7 +128,7 @@
                     <h2>It's Now 39 Years, 6 Months And 19 Days Since The Introduction Of The Internet.  </h2>
 
                     <p>January 1, 1983 is considered the official birthday of the Internet. Prior to this, the various computer networks did not have a standard way to communicate with each other. A new communications protocol was established called Transfer Control Protocol/Internetwork Protocol (TCP/IP).</p>
-                    <h3>It's Now 33 Years Since The Introduction Of The World Wide Web</h3>
+                    <h3>Also, It's Now 33 Years Since The Introduction Of The World Wide Web</h3>
                 </div>
             </div>
             <div class="col-sm">
@@ -154,13 +143,25 @@
                     <img src="~/images/web-h-sv.svg" alt="web-info" style="width: 100%; height: auto;" />
                 </div>
             </div>
+            @*<div class="col-sm">
+            <div class="text-center">
+                <h1 class="display-4">Web Development</h1>
+                <h2>Web Hosting and Domain Names.  </h2>
+
+                <p>We specialise in Database Design and Development. Inventory to Stock control, or a custom module to your existing system.</p>
+
+            </div>
+        </div>*@
             <div class="col-sm">
                 <div class="text-center">
-                    <h1 class="display-4">Web Development</h1>
-                    <h2>Web Hosting and Domain Names.  </h2>
+                    <h1 class="display-4">Exercise</h1>
+                    <h2>Try to do this after you go through the code</h2>
 
-                    <p>We specialise in Database Design and Development. Inventory to Stock control, or a custom module to your existing system.</p>
+                    <p>The numbers in the following line should be updated dynamically based on the starting date, 1 January 1983. The numbers are calculated based on system dates. </p>
+                    
+                    <h3>It's Now <span class="text-danger">39</span>  Years, <span class="text-danger">6</span>  Months And <span class="text-danger">19</span> Days Since The Introduction Of The Internet.  </h3>
 
+                    <p>Once you have completed the exercise, the above fixed numbers should change based on 1 January 1983, the date of the introduction of the internet.  </p>
                 </div>
             </div>
         </div>
@@ -179,7 +180,7 @@
                         <div class="col-lg-8">
                             <div class="card-body">
                                 <h5 class="card-title">Corporate Business</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">This is a card with a picture and supporting text next as a natural lead-in to additional content. On larger devices it will show as a little bit longer card with the picture on the right.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
@@ -195,7 +196,7 @@
                         <div class="col-lg-8">
                             <div class="card-body">
                                 <h5 class="card-title">App Development</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">On medium devices it will show as a little bit narrower but taller card with the picture on the top.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
@@ -211,7 +212,7 @@
                         <div class="col-lg-8">
                             <div class="card-body">
                                 <h5 class="card-title">IT Consultancy</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">On smaller devices such as mobiles, all three cards will be stacked up while the picture showing on top of the card.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
@@ -303,104 +304,104 @@
             <div class="titlepage text-center">
                 <h1 class="display-4">We Provide Best Services</h1>
                 <p>
-                    Need a set of equal width and height boxes that aren’t attached to one another? This uses default bootstrap columns. Card footers in decks will automatically line up.
+                    Another way to get equal width and height rectangles that aren’t attached to one another? This uses default bootstrap columns. 
                 </p>
-                <small>Note that on a small screen, i.e. mobile, it will stack up in to one column. On medium size devices it will show 2 cards per row stacking on the other two.</small>
+                <small>Note that on a small screen, i.e. mobile, it will stack up in to one column. On medium size devices it will show 2 rectangles per row stacking on the others by two per row. on larger devices it will show 3 rectangles per row stacking on the others by three per row.</small>
             </div>
         </div>
 
         <div class="container">
             <div class="row">
-                <div class="col col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6  col-adjust">
                     <div class="des-box h-100">
                         <a asp-area="" asp-page="" class="h-100">
-                            <div class="card border-feature1">
+                           <div class="border-feature1">
                                 <div class="feature-img">
                                     <span class="fa fa-award fa-3x" aria-hidden="true"></span>
                                 </div>
                                 <div class="card-body">
                                     <h3 class="feature-titel mb-2">Web App Development</h3>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">This is a wider rectangle with supporting text below as a natural lead-in to additional content. This content can be a little bit longer.</p>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                 </div>
-                <div class="col col-lg-4 col-md-6 ">
+                <div class="col-lg-4 col-md-6  col-adjust">
                     <div class="des-box h-100">
                         <a asp-area="" asp-page="" class="h-100">
-                            <div class="card border-feature1">
+                           <div class="border-feature1">
                                 <div class="feature-img">
                                     <span class="fa fa-anchor fa-3x" aria-hidden="true"></span>
                                 </div>
                                 <div class="card-body">
                                     <h3 class="feature-titel mb-2">Marketing Services</h3>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">Additionally, see the background color changes when mouse hover over a rectangle. A little cosmetic addition. </p>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                 </div>
-                <div class="col col-lg-4 col-md-6 ">
+                <div class="col-lg-4 col-md-6  col-adjust">
                     <div class="des-box h-100">
                         <a asp-area="" asp-page="" class="h-100">
-                            <div class="card border-feature1">
+                           <div class="border-feature1">
                                 <div class="feature-img">
                                     <span class="fa fa-atlas fa-3x" aria-hidden="true"></span>
                                 </div>
                                 <div class="card-body">
                                     <h3 class="feature-titel mb-2">Social Media Marketing</h3>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">Font-awesome icons used to be a good choice before, but recently they are adding too many comments or their foot-prints to the generated HTML source code, making it unhealthy for the users.</p>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                 </div>
-                <div class="col col-lg-4 col-md-6 ">
+                <div class="col-lg-4 col-md-6  col-adjust">
                     <div class="des-box h-100">
                         <a asp-area="" asp-page="" class="h-100">
-                            <div class="card border-feature1">
+                           <div class="border-feature1">
                                 <div class="feature-img">
                                     <span class="fa fa-book-open fa-3x" aria-hidden="true"></span>
                                 </div>
                                 <div class="card-body">
                                     <h3 class="feature-titel mb-2">SEO Optimization Services</h3>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">You may have noticed that the meanings of headings and the contents of each rectangle do not match. Yes, that is because this is a template only, just to demonstrate. </p>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                 </div>
-                <div class="col col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6  col-adjust">
                     <div class="des-box h-100">
                         <a asp-area="" asp-page="" class="h-100">
-                            <div class="card border-feature1">
+                           <div class="border-feature1">
                                 <div class="feature-img">
                                     <span class="fa fa-feather fa-3x" aria-hidden="true"></span>
                                 </div>
                                 <div class="card-body">
                                     <h3 class="feature-titel mb-2">Quality assured</h3>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">I am using some meaningful sentences about the template to fill in the contents instead of using boring French words on an English language website.</p>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                 </div>
-                <div class="col col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6  col-adjust">
                     <div class="des-box h-100">
                         <a asp-area="" asp-page="" class="h-100">
-                            <div class="card border-feature1">
+                           <div class="border-feature1">
                                 <div class="feature-img">
                                     <span class="fa fa-globe fa-3x" aria-hidden="true"></span>
                                 </div>
                                 <div class="card-body">
                                     <h3 class="feature-titel mb-2">24/7 Call Center Service</h3>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">A creative developer should not copy the same boring French paragraphs again and again, just because others are doing it.</p>
                                 </div>
                             </div>
                         </a>
@@ -411,96 +412,6 @@
         </div>
     </div>
 </section>
-
-<div class="order">
-    <div class="container-fluid">
-        <div class="row1">
-            <div class="col-md-8 offset-md-2">
-                <div class="titlepage text-center">
-                    <h2>Check Out Awesome Plans, <br> <span class="blue_light">Order Now</span></h2>
-                    <p>
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                        officia deserunt mollit anim id est laborum."
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div id="ho_co" class=" ho_co order-box_main">
-                    <div class="order-box text-center">
-                        <h3>Shared Hosting</h3>
-                        <h4>Starting at</h4>
-                        <p><span>$9</span>PER MONTH</p>
-                        <a href="Javascript:void(0)">Personal use</a>
-                        <ul class="supp">
-                            <li>Unlimited projects</li>
-                            <li>24/7 support</li>
-                            <li>Personal use</li>
-                            <li>Unlimited projects</li>
-                            <li>24/7 support</li>
-                        </ul>
-                    </div>
-                    <a class="read_more" href="Javascript:void(0)">Buy Now</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div id="ho_co" class="ho_co order-box_main">
-                    <div class="order-box text-center">
-                        <h3>Reseller Hosting</h3>
-                        <h4>Starting at</h4>
-                        <p><span>$9</span>PER MONTH</p>
-                        <a href="Javascript:void(0)">Personal use</a>
-                        <ul class="supp">
-                            <li>Unlimited projects</li>
-                            <li>24/7 support</li>
-                            <li>Personal use</li>
-                            <li>Unlimited projects</li>
-                            <li>24/7 support</li>
-                        </ul>
-                    </div>
-                    <a class="read_more" href="Javascript:void(0)">Buy Now</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div id="ho_co" class="ho_co order-box_main">
-                    <div class="order-box text-center">
-                        <h3>Dedicated Servers</h3>
-                        <h4>Starting at</h4>
-                        <p><span>$9</span>PER MONTH</p>
-                        <a href="Javascript:void(0)">Personal use</a>
-                        <ul class="supp">
-                            <li>Unlimited projects</li>
-                            <li>24/7 support</li>
-                            <li>Personal use</li>
-                            <li>Unlimited projects</li>
-                            <li>24/7 support</li>
-                        </ul>
-                    </div>
-                    <a class="read_more" href="Javascript:void(0)">Buy Now</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div id="ho_co" class="ho_co order-box_main">
-                    <div class="order-box text-center">
-                        <h3>Windows Servers</h3>
-                        <h4>Starting at</h4>
-                        <p><span>$12</span>PER MONTH</p>
-                        <a href="Javascript:void(0)">Business Grade</a>
-                        <ul class="supp">
-                            <li>Unlimited Sub Domains</li>
-                            <li>5 MS SQL Server Databases</li>
-                            <li>Business use</li>
-                            <li>Office 365</li>
-                            <li>24/7 support</li>
-                        </ul>
-                    </div>
-                    <a class="read_more" href="Javascript:void(0)">Buy Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <div class="section-divider text-center">
@@ -516,151 +427,163 @@
 
 </div>
 
-<div class="card text-center mt-5">
-    <div class="card-header">
-        <h1>Additional features included in this template: </h1>
-    </div>
-    <div class="card-body">
-        <p class="card-text">
-            This project also demonstrates how to add commonly used custom UI features in the Visual Studio 2017 Community edition.
-        </p>
-
-    </div>
-    <div class="card-footer text-muted">
-        <small class="card-text">
-            Note that this template does NOT demonstrates how to add custom user data to a generated project in the Visual Studio 2017 Community edition. Please check the other template that comes with user authentication enabled. And it will show the practices used to meet some of the GDPR requirements added custom user data, i.e. user can delete own user data entered any time.
-        </small>
-    </div>
-</div>
-
-<div class="card-deck mt-5">
-    <div class="card text-center">
+<div class="container-fluid">
+    <div class="card text-center mt-5">
         <div class="card-header">
-            <h2 class="card-title">Scroll to top Button </h2>
-        </div>
-        <div class="card-body">
-            <p class="card-text">Added necessary code to show up scroll to top button at the bottom left corner of the page.</p>
-            <a href="#" class="btn btn-dark btn-lg scroll-to-top" role="button" title="goto top button"><i class="fas fa-arrow-alt-circle-up fa-1x"></i></a>
-        </div>
-        @*<div class="card-footer text-muted">
-
-            </div>*@
-    </div>
-    <div class="card text-center">
-        <div class="card-header">
-            <h2 class="card-title">Navbar Shrink on Scroll down</h2>
-        </div>
-        <div class="card-body">
-            <p class="card-text">NavBar shrinks when the user scroll down the page.</p>
-        </div>
-        @*<div class="card-footer text-muted">
-
-            </div>*@
-    </div>
-</div>
-<div class="card-deck  mt-3">
-    <div class="card text-center">
-        <div class="card-header">
-            <h2 class="card-title">Use System Variables</h2>
+            <h1>Additional features included in this template: </h1>
         </div>
         <div class="card-body">
             <p class="card-text">
-                Shows how to use system variables in the Razor pages. The demonstration can be found in the
-                <a class="btn btn-primary text-light" asp-area="" asp-page="/About">About</a> page.
+                This project also demonstrates how to add commonly used custom UI features in the Visual Studio 2017 Community edition.
             </p>
 
         </div>
-        @*<div class="card-footer text-muted">
-
-            </div>*@
+        <div class="card-footer text-muted">
+            <small class="card-text">
+                Note that this template does NOT demonstrates how to add custom user data to a generated project in the Visual Studio 2017 Community edition. Please check the other template that comes with user authentication enabled. And it will show the practices used to meet some of the GDPR requirements added custom user data, i.e. user can delete own user data entered any time.
+            </small>
+        </div>
     </div>
-    <div class="card text-center">
+
+
+    <div class="card-deck mt-5">
+        <div class="card text-center">
+            <div class="card-header">
+                <h2 class="card-title">Scroll to top Button </h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Added necessary code to show up scroll to top button at the bottom left corner of the page.</p>
+                <a href="#" class="btn btn-dark btn-lg scroll-to-top" role="button" title="goto top button"><i class="fas fa-arrow-alt-circle-up fa-1x"></i></a>
+            </div>
+            @*<div class="card-footer text-muted">
+
+                </div>*@
+        </div>
+        <div class="card text-center">
+            <div class="card-header">
+                <h2 class="card-title">Navbar Shrink on Scroll down</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">NavBar shrinks when the user scroll down the page.</p>
+            </div>
+            @*<div class="card-footer text-muted">
+
+                </div>*@
+        </div>
+    </div>
+    <div class="card-deck  mt-3">
+        <div class="card text-center">
+            <div class="card-header">
+                <h2 class="card-title">Use System Variables</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Shows how to use system variables in the Razor pages. The demonstration can be found in the
+                    <a class="btn btn-primary text-light" asp-area="" asp-page="/About">About</a> page.
+                </p>
+
+            </div>
+            @*<div class="card-footer text-muted">
+
+                </div>*@
+        </div>
+        <div class="card text-center">
+            <div class="card-header">
+                <h2 class="card-title">Font Awesom icons</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Can easily add font-awesome icons.</p>
+                <p>
+                    <span class="btn btn-info">
+                        <i class="fas fa-address-book fa-4x"></i>
+                    </span>&nbsp;&nbsp;
+                    <span class="btn btn-default">
+                        <i class="fas fa-cart-plus fa-4x"></i>
+                    </span>&nbsp;&nbsp;
+                    <span class="btn btn-success">
+                        <i class="fas fa-birthday-cake fa-4x"></i>
+                    </span>&nbsp;&nbsp;
+                    <span class="btn btn-warning">
+                        <i class="fas fa-snowflake fa-4x"></i>
+                    </span>
+
+                </p>
+            </div>
+            @*<div class="card-footer text-muted">
+
+                </div>*@
+        </div>
+    </div>
+
+    <div class="card text-center mt-5">
         <div class="card-header">
-            <h2 class="card-title">Font Awesom icons</h2>
+            <h1>Some Bootstrap 4.3 Features Used In This Template</h1>
         </div>
-        <div class="card-body">
-            <p class="card-text">Can easily add font-awesome icons.</p>
-            <p>
-                <span class="btn btn-info">
-                    <i class="fas fa-address-book fa-4x"></i>
-                </span>&nbsp;&nbsp;
-                <span class="btn btn-default">
-                    <i class="fas fa-cart-plus fa-4x"></i>
-                </span>&nbsp;&nbsp;
-                <span class="btn btn-success">
-                    <i class="fas fa-birthday-cake fa-4x"></i>
-                </span>&nbsp;&nbsp;
-                <span class="btn btn-warning">
-                    <i class="fas fa-snowflake fa-4x"></i>
-                </span>
-
-            </p>
-        </div>
-        @*<div class="card-footer text-muted">
-
-            </div>*@
     </div>
+
+    <div class="card-deck">
+        <div class="card text-center  mt-5">
+            <div class="card-header">
+                <h2 class="card-title">Sticky Navigation Bar</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">The navigation bar is always visible at the top of the page.</p>
+                <p class="card-text"><small class="text-muted">Note: this is not an additional feature, just a modification to the existing Navbar</small></p>
+            </div>
+            @*<div class="card-footer text-muted">
+
+                </div>*@
+        </div>
+        <div class="card text-center  mt-5">
+            <div class="card-header">
+                <h2 class="card-title">Bootstrap Carousel</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Bootstrap carousel is available with the previously released ASP.NET Core 2.1 template. So I have added it here with modified bootstrap  code to match the version used in this template
+                </p>
+            </div>
+            @*<div class="card-footer text-muted">
+
+                </div>*@
+        </div>
+        <div class="card text-center  mt-5">
+            <div class="card-header">
+                <h2 class="card-title">Equal Height Panels Using Cards</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">As in this part, equal height panles can easily add using Bootstrap <i>Card</i> feature.</p>
+            </div>
+            @*<div class="card-footer text-muted">
+
+                </div>*@
+        </div>
+    </div>
+
+    <div class="card text-center mt-5 mb-5">
+        <div class="card-header">
+            <h2>And more features to come .. </h2>
+        </div>
+
+    </div>
+
 </div>
 
 
-<div class="card text-center mt-5">
-    <div class="card-header">
-        <h1>Some Bootstrap 4.3 Features Used In This Template</h1>
-    </div>
-</div>
-
-<div class="card-deck">
-    <div class="card text-center  mt-5">
-        <div class="card-header">
-            <h2 class="card-title">Sticky Navigation Bar</h2>
-        </div>
-        <div class="card-body">
-            <p class="card-text">The navigation bar is always visible at the top of the page.</p>
-            <p class="card-text"><small class="text-muted">Note: this is not an additional feature, just a modification to the existing Navbar</small></p>
-        </div>
-        @*<div class="card-footer text-muted">
-
-            </div>*@
-    </div>
-    <div class="card text-center  mt-5">
-        <div class="card-header">
-            <h2 class="card-title">Bootstrap Carousel</h2>
-        </div>
-        <div class="card-body">
-            <p class="card-text">
-                Bootstrap carousel is available with the previously released ASP.NET Core 2.1 template. So I have added it here with modified bootstrap  code to match the version used in this template
-            </p>
-        </div>
-        @*<div class="card-footer text-muted">
-
-            </div>*@
-    </div>
-    <div class="card text-center  mt-5">
-        <div class="card-header">
-            <h2 class="card-title">Equal Height Panels Using Cards</h2>
-        </div>
-        <div class="card-body">
-            <p class="card-text">As in this part, equal height panles can easily add using Bootstrap <i>Card</i> feature.</p>
-        </div>
-        @*<div class="card-footer text-muted">
-
-            </div>*@
-    </div>
-</div>
-
-
-<div class="card text-center mt-5 mb-5">
-    <div class="card-header">
-        <h2>And more features to come .. </h2>
-    </div>
-
-</div>
 <section id="feature-set1">
 
     <div class="jumbo text-center">
         <h1 class="display-1 mt-5 mb-5">How to use this template:</h1>
     </div>
 
+    <div class="card text-center">
+        <div class="card-body">
+            <p class="card-text">I am planning to bundle these projects in to a Visual Studio Template and publish them to Visual Studio market place and Nuget for free so that you can install them into your development computer. </p>
+            <p class="card-text">Then, you can create a new project and select this template.</p>
+            <h3 class="card-text">Until then, follow the instructions below..</h3>
+        </div>
+
+    </div>
 
     <div class="card text-center">
         <div class="card-body">
@@ -678,24 +601,29 @@
     </div>
 </section>
 
+
 <environment include="Development,Staging">
-    <div class="card text-center mt-5">
-        <div class="card-header">
-            <h1>Visual Studio Solution Name: <span class="text-success">@Html.DisplayFor(model => model.SolutionName)</span></h1>
-        </div>
-        <div class="card-body">
-            <h3 class="card-title">Project Name : <span class="span-bold text-danger">@Html.DisplayFor(model => model.MyApplicationName)</span></h3>
-            <p class="card-text"> ASPNETCORE_ENVIRONMENT : <span class="btn btn-danger">@Html.DisplayFor(model => model.ThisEnvironment)</span> </p>
+    <div class="container-fluid">
+        <div class="card text-center mt-5">
+            <div class="card-header">
+                <p>This section will only visible on your development or staging web server. In production environment it should automatically exclude the contents in the section. </p>
+                <h1>Visual Studio Solution Name: <span class="text-success">@Html.DisplayFor(model => model.SolutionName)</span></h1>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Project Name : <span class="span-bold text-danger">@Html.DisplayFor(model => model.MyApplicationName)</span></h3>
+                <p class="card-text"> ASPNETCORE_ENVIRONMENT : <span class="btn btn-danger">@Html.DisplayFor(model => model.ThisEnvironment)</span> </p>
 
-            <p>Application Name : <span class="btn alert-primary">@Html.DisplayFor(model => model.MyApplicationName)</span> </p>
-            <p>TargetFramework : <span class="btn alert-primary text-wrap">@Html.DisplayFor(model => model.TargetFramework)</span> </p>
-
-            <p>Current RunTime Version : <span class="btn alert-primary">@Html.DisplayFor(model => model.CurrentRunTimeVersion)</span> </p>
-        </div>
-        <div class="card-footer text-muted">
-            <p><span class="btn alert-primary text-wrap">@Html.DisplayFor(model => model.version)</span> </p>
+                <p>Application Name : <span class="btn alert-primary">@Html.DisplayFor(model => model.MyApplicationName)</span> </p>
+                <p>TargetFramework : <span class="btn alert-primary text-wrap">@Html.DisplayFor(model => model.TargetFramework)</span> </p>
+                <p>Microsoft ASP.NET Core Version : <span class="btn alert-primary">@Html.DisplayFor(model => model.DotNetCoreVersion)</span> </p>
+                <p>Current RunTime Version : <span class="btn alert-primary">@Html.DisplayFor(model => model.CurrentRunTimeVersion)</span> </p>
+            </div>
+            <div class="card-footer text-muted">
+                <p><span class="btn alert-primary text-wrap">@Html.DisplayFor(model => model.version)</span> </p>
+            </div>
         </div>
     </div>
+    
 
 </environment>
 

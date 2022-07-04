@@ -44,6 +44,8 @@
             <p>System Second : <span class="btn alert-primary">@DateTime.Now.Second</span> </p>
 
             <p>.NET Core Version : <span class="btn alert-primary">@Html.DisplayFor(model => model.DotNetCoreVersion)</span> </p>
+            <p>Microsoft ASP.NET Core Version : <span class="btn alert-primary">@Html.DisplayFor(model => model.DotNetCoreVersion)</span> </p>
+
             <p class="text-wrap">
                 .NET Core  @Html.DisplayFor(model => model.DotNetCoreVersion)  installed in:  @System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory()
             </p>
