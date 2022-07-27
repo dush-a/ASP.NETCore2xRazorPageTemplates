@@ -1,6 +1,16 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+
+/*#region Services */
+
+.section-divider {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/*#endregion  Services*/
+
 /*#region custom code ################################################## */
 
 /*#region Site Defaults */
@@ -138,10 +148,6 @@ p {
     padding: 0.2rem;
 }
 
-/*.navbar.bg-our-color {
-    background-color: #820578;
-}*/
-
 a.navbar-brand {
     white-space: normal;
     text-align: center;
@@ -171,7 +177,6 @@ li.nav-item {
 .carousel-item img {
     position: absolute;
     object-fit: cover;
-    /*top: 0;*/
     left: 0;
     min-height: 690px;
 }
@@ -209,7 +214,7 @@ li.nav-item {
 
 .footer-wrapper {
     padding: 6em 0 2em 0;
-    background-color: #023d9a;
+    background-color: #011e4c;
 }
 
 .footer .contact-info, .footer .footer-other-links {
@@ -290,7 +295,6 @@ li.nav-item {
 }
 
 .motion-picture1 {
-    /*padding-left:5px*/
     text-align: center;
     padding-top: 5em;
     animation: fadeInTopRight 2s ease;
@@ -298,6 +302,7 @@ li.nav-item {
 /*#endregion business-services1-grid1*/
 
 /*#region service2 */
+
 /*#endregion service2*/
 
 /*#region service-feature1 */
@@ -362,10 +367,6 @@ li.nav-item {
     padding-top: 2em;
     padding-bottom: 2em;
 }
-
-/*#endregion misc*/
-
-/*#region misc */
 
 /*#endregion misc*/
 
@@ -471,9 +472,6 @@ li.nav-item {
     }
 
     .carousel-item img {
-        /*position: absolute;
-        object-fit: cover;
-        left: 0;*/
         min-height: 440px;
     }
 
@@ -512,10 +510,6 @@ li.nav-item {
         #sctn-business-services1 .row {
             padding-bottom: 5em;
         }
-
-    /*.business-services1-grid1 {
-        padding: 5em 0 5em 0;
-    }*/
 
     .motion-picture1 {
         padding-left: 5px;
@@ -563,10 +557,6 @@ li.nav-item {
     html {
         font-size: 18px;
     }
-
-    /*.main-wrapper {
-        padding: 0.5em 1.5em 0 1.5em;
-    }*/
 
     .jumbo h1.display-1 {
         font-size: 60px;
@@ -642,19 +632,14 @@ li.nav-item {
 
     /*#endregion Feature-set1 */
 
+    /*#region Services */
+
     /*#region service-packages */
 
-    /* .service-packages .card-deck .card {
-        min-width:33%;
-        margin-bottom:1em;
-    }*/
 
     /*#endregion service-packages*/
 
-    /*#region Services */
-
     /*#region business-services1-grid1 */
-
 
 
     /*#endregion business-services1-grid1*/
@@ -667,8 +652,6 @@ li.nav-item {
 
     /*#endregion Services*/
 
-
-
     /*#region business-scope */
 
     .business-scope img {
@@ -676,6 +659,7 @@ li.nav-item {
     }
 
     /*#endregion business-scope*/
+   
     /*#region custom footer */
     .footer-wrapper {
         padding: 3em 1.5em 2em 1.5em;
@@ -703,10 +687,6 @@ li.nav-item {
 
     .main-panel {
         padding: 0;
-    }
-
-    .footer-wrapper {
-        padding: 3em 2em 2em 2em;
     }
 
     .jumbo h1.display-1 {
@@ -760,11 +740,6 @@ li.nav-item {
 
     /*#endregion Carousel */
 
-    /*#region Feature-set1 */
-
-    /*#endregion Feature-set1 */
-
-
     /*#region Services */
 
     /*#region business-services1-grid1 */
@@ -788,8 +763,15 @@ li.nav-item {
 
     /*#endregion business-scope*/
 
+    /*#region Feature-set1 */
+
+    /*#endregion Feature-set1 */
+
     /*#region custom footer */
 
+    .footer-wrapper {
+        padding: 3em 2em 2em 2em;
+    }
     /*#endregion custom footer */
 
 }
@@ -801,10 +783,6 @@ li.nav-item {
     html {
         font-size: 20px;
     }
-
-    /*.main-wrapper {
-        padding: 0.5em 2.5em 0 2.5em;
-    }*/
 
     .jumbo h1.display-1 {
         font-size: 90px;
@@ -852,14 +830,9 @@ li.nav-item {
 
     /*#endregion Carousel */
 
-    /*#region Feature-set1 */
-
-    /*#endregion Feature-set1 */
-
     /*#region Services */
 
     /*#region business-services1-grid1 */
-
 
 
     /*#endregion business-services1-grid1*/
@@ -880,14 +853,9 @@ li.nav-item {
 
     /*#endregion Services*/
 
-    /*#region custom footer */
+    /*#region Feature-set1 */
 
-    .footer-wrapper {
-        padding: 3em 2.5em 2em 2.5em;
-    }
-
-
-    /*#endregion custom footer */
+    /*#endregion Feature-set1 */
 
     /*#region misc */
 
@@ -897,6 +865,15 @@ li.nav-item {
     }
 
     /*#endregion misc*/
+    /*#region custom footer */
+
+    .footer-wrapper {
+        padding: 3em 2.5em 2em 2.5em;
+    }
+
+
+    /*#endregion custom footer */
+
 }
 
 @media (min-width: 1980px) {
@@ -906,10 +883,6 @@ li.nav-item {
     html {
         font-size: 21px;
     }
-
-    /*.main-wrapper {
-        padding: 0.5em 3em 0 3em;
-    }*/
 
     .container-fluid {
         padding: 2px 50px 2px 50px;
@@ -941,14 +914,9 @@ li.nav-item {
 
     /*#endregion Carousel */
 
-    /*#region Feature-set1 */
-
-    /*#endregion Feature-set1 */
-
     /*#region Services */
 
     /*#region business-services1-grid1 */
-
 
 
     /*#endregion business-services1-grid1*/
@@ -960,6 +928,10 @@ li.nav-item {
     /*#endregion service2*/
 
     /*#endregion Services*/
+
+    /*#region Feature-set1 */
+
+    /*#endregion Feature-set1 */
 
     /*#region custom footer */
 
@@ -975,3 +947,4 @@ li.nav-item {
 }
 
 /*#endregion */
+
