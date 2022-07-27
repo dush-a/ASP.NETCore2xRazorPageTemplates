@@ -65,3 +65,4 @@
 #*.js linguist-vendored
 *.js linguist-detectable=false
 *.html linguist-detectable=false
+*.cshtml linguist-language=ASP.NETCore-Razor
